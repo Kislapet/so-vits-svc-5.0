@@ -1,0 +1,12 @@
+/chkpt/
+/logs/
+/whisper_pretrain/medium.pt
+/speaker_pretrain/best_model.pth.tar
+/hubert/checkpoint_best_legacy_500.pt
+/data_svc/whisper/
+/data_svc/waves-32k/
+/data_svc/specs/
+/data_raw/
+sovits5.0.pretrain.pth
+/configs/singers/
+/configs/singers_sample/

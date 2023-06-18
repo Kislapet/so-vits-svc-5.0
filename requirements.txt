@@ -1,0 +1,14 @@
+fsspec
+ffmpeg-python
+praat-parselmouth
+pyworld
+matplotlib
+soundfile
+scikit-learn
+scipy
+torchcrepe
+tensorboard
+transformers
+tqdm
+librosa
+omegaconf
