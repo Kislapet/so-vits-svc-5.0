@@ -10,9 +10,10 @@ import matplotlib.pylab as plt
 
 def save_figure_to_numpy(fig):
     # save it to a numpy array.
-    data = np.fromstring(fig.canvas.tostring_rgb(), dtype=np.uint8, sep='')
-    data = data.reshape(fig.canvas.get_width_height()[::-1] + (3,))
-    data = np.transpose(data, (2, 0, 1))
+    data = np.fromstring(fig.canvas.tostring_argb(), dtype=np.uint8, sep='')  # Changed line
+    data = data.reshape(fig.canvas.get_width_height()[::-1] + (4,))  # Changed line
+    data = data[:, :, :3] # Changed line to remove alpha channel and restore 3 channels for RGB image
+    data = np.transpose(data, (2, 0, 1)) 
     return data
 
 
